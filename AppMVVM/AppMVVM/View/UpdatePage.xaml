@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMVVM.View.UpdatePage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Editar Empleado" FontSize="20" Padding="30,50,30,10"/>
+
+            <Entry Text="{Binding codigo}" x:Name="txtcodigo" Placeholder="ID" Keyboard="Numeric" Margin="30,10,30,0" IsReadOnly="True" FontSize="15"/>
+            <Entry Text="{Binding nombre}" x:Name="txtnombre1" Placeholder="Nombre" Keyboard="Text" Margin="30,10,30,0" FontSize="15"/>
+            <Entry Text="{Binding apellido}" x:Name="txtapellido1" Placeholder="Apellido" Keyboard="Text" Margin="30,0,30,0" FontSize="15"/>
+            <Entry Text="{Binding edad}" x:Name="txtedad1" Placeholder="Edad" Keyboard="Numeric" Margin="30,0,30,0" FontSize="15"/>
+            <Editor Text="{Binding direccion}" x:Name="txtdireccion1" Placeholder="Direccion" Keyboard="Text" Margin="30,0,30,0" FontSize="15"/>
+            <Entry Text="{Binding puesto}" x:Name="txtpuesto1" Placeholder="Puesto" Keyboard="Text" Margin="30,0,30,30" FontSize="15"/>
+
+            <Button Text="Eliminar" x:Name="btneliminar" Clicked="btneliminar_Clicked" HorizontalOptions="Center" Background="#54BDA5" TextColor="White" WidthRequest="150" />
+            <Button Text="Actualizar" x:Name="btnactualizar" Clicked="btnactualizar_Clicked" HorizontalOptions="Center" Background="#54BDA5" TextColor="White" WidthRequest="150" />
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

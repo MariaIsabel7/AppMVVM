@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMVVM.View.EmpleadoPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Crear Empleado" FontSize="Title" Padding="30,50,30,10"/>
+            <Label Text="Envio de datos" FontSize="16" Padding="30,0,30,30"/>
+
+
+            <Entry Text="{Binding nombre}" x:Name="txtnombre" Placeholder="Nombre" Keyboard="Text" Margin="30,10,30,20"/>
+            <Entry Text="{Binding apellido}" x:Name="txtapellido" Placeholder="Apellido" Keyboard="Text" Margin="30,0,30,20"/>
+            <Entry Text="{Binding edad}" x:Name="txtedad" Placeholder="Edad" Keyboard="Numeric" Margin="30,0,30,20"/>
+            <Editor Text="{Binding direccion}" x:Name="txtdireccion" Placeholder="Direccion" Keyboard="Text" Margin="30,0,30,30"/>
+            <Entry Text="{Binding puesto}" x:Name="txtpuesto" Placeholder="Puesto" Keyboard="Text" Margin="30,0,30,30"/>
+
+            <Button Text="Agregar" x:Name="btndatos" Clicked="btndatos_Clicked" Margin="0,20,0,10"  HorizontalOptions="Center" Background="#54BDA5" TextColor="White" WidthRequest="200" />
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

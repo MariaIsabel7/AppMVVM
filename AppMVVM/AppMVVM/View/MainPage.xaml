@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMVVM.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Ejercicio III Parcial" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Button Text="Crear Empleado" x:Name="btndatos" Clicked="btndatos_Clicked" VerticalOptions="Center" HorizontalOptions="Center" Background="#54BDA5" TextColor="White" WidthRequest="300" Margin="0,100,0,10" Padding="0"/>
+        <Button Text="Ver Lista de Empleados" x:Name="btnlista" Clicked="btnlista_Clicked" VerticalOptions="Center" HorizontalOptions="Center" Background="#54BDA5" TextColor="White" WidthRequest="300" Margin="0" Padding="0" />
+
+    </StackLayout>
+
+</ContentPage>

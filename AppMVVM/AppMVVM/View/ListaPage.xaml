@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMVVM.View.ListaPage">
+
+    <ListView x:Name="lstEmpleados" ItemTapped="lstEmpleados_ItemTapped" Margin="10">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions >
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="{Binding codigo}" Grid.Row="0" Grid.Column="0" TextColor="Black"/>
+                        <Label Text="{Binding nombre}" Grid.Row="0" Grid.Column="1" TextColor="Black" x:Name="txtnombre"/>
+                        <Label Text="{Binding apellido}" Grid.Row="0" Grid.Column="2" TextColor="Black" x:Name="txtapellido"/>
+                        <Label Text="{Binding edad}" Grid.Row="0" Grid.Column="3" TextColor="Black" x:Name="txtedad"/>
+                        <Label Text="{Binding direccion}" Grid.Row="0" Grid.Column="4" TextColor="Black" x:Name="txtdireccion"/>
+                        <Label Text="{Binding puesto}" Grid.Row="0" Grid.Column="5" TextColor="Black" x:Name="txtpuesto"/>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    
+</ContentPage>
